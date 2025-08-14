@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "title": "Multi-tenant best practices on IBM Cloud",
+  "introduction": "This is a description of what the user will be able to find in the content for your solution.",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Overview",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      },
+      {
+        "title": "Multi-tenancy options",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      },
+      {
+        "title": "Architecture Decisions",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      },
+      {
+        "title": "Reference Architecture",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      },
+      {
+        "title": "Resources",
+        "href": "/docs/overview?topic=overview-get-started-checklist"
+      }
+    ]
+  },
+  "section_architectures": [
+    {
+      "title": "Architectural Considerations",
+      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
+      "deployable": true
+    },
+    {
+      "title": "Reference Architecture",
+      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
+      "deployable": true
+    }
+  ]
+  }
+}
