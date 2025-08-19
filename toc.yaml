@@ -4,9 +4,9 @@
 ---
 toc:
   properties:
-    subcollection: pattern-intr-org-multitenancy
-    href: /docs/pattern-intr-org-multitenancy
-    path: pattern-intr-org-multitenancy
+    subcollection: pattern-intra-org-multitenancy
+    href: /docs/pattern-intra-org-multitenancy
+    path: pattern-intra-org-multitenancy
     audience: solution
     category: solution_docs
     content-type: reference-architecture
