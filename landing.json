@@ -1,30 +1,12 @@
 {
   "version": 2,
   "title": "Multi-tenant best practices on IBM Cloud",
-  "introduction": "This is a description of what the user will be able to find in the content for your solution.",
-  "product_page": "https://ibm.com/cloud/solution-page",
-  "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
+  "introduction": "This is a document intended to provide basic principles to deploy an application to be consumed by multiple customers within the organization",
   "section_topics": {
     "links": [
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
-      },
-      {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Overview",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
       }
     ]
   },
