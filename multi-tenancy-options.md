@@ -5,11 +5,11 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-14"
+lastupdated: "2025-08-19"
 
 keywords: # Not typically populated
 
-subcollection: pattern-intr-org-multitenancy # Use deployable-reference-architectures, or the subcollection value from your toc.yaml file if docs-only.
+subcollection: pattern-intra-org-multitenancy # Use deployable-reference-architectures, or the subcollection value from your toc.yaml file if docs-only.
 
 
 
