@@ -11,7 +11,7 @@ toc:
     category: solution_docs
     content-type: reference-architecture
     description: Best practices for multi-tenant management in IBM Cloud.
-    label: Docs subcollection title # Replace
+    label: Best practices for multi-tenant management in IBM Cloud.
   entries:
   - navgroup:
       id: overview
