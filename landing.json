@@ -19,6 +19,10 @@
       {
         "title": "Reference Architecture",
         "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-reference-architecture"
+      },
+      {
+        "title": "Resources",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=topic=pattern-intra-org-multitenancy-references"
       }
     ]
   },
