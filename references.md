@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-14"
+lastupdated: "2025-08-20"
 
-subcollection: pattern-epattern-intr-org-multitenancy
+subcollection: pattern-intra-org-multitenancy
 
 keywords:
 ---
