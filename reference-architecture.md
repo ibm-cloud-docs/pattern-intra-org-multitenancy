@@ -45,8 +45,8 @@ production: false
 
 
 
-# Title
-{: #title-id}
+# Multi-tenancy Reference Architecture
+{: #architecture}
 {: toc-content-type="reference-architecture"}
 {: toc-version="1.0"}
 
