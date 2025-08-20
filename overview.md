@@ -1,10 +1,10 @@
 ---
+
 copyright:
   years: 2025
 lastupdated: "2025-08-20"
 
 subcollection: pattern-intra-org-multitenancy
-
 keywords:
 
 ---
