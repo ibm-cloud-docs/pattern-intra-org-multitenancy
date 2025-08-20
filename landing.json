@@ -9,16 +9,16 @@
         "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
       },
       {
-        "title": "Overview",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
+        "title": "Multi-tenancy options",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-options"
       },
       {
-        "title": "Overview",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
+        "title": "Architectural considerations",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-architectural-considerations"
       },
       {
-        "title": "Overview",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
+        "title": "Reference Architecture",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-reference-architecture"
       }
     ]
   },
