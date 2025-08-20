@@ -14,8 +14,6 @@ keywords:
 # Overview
 {: #overview}
 
-# IBM Cloud for Financial Services
-
 The **IBM Cloud for Financial Services** is a cloud platform built specifically for the needs of the Financial Services Industry.
 
 The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} architecture design that outlines the basic principles to deploy an application to be consumed by multiple customers within the organization.

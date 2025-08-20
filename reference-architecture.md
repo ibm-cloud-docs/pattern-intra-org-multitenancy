@@ -5,37 +5,16 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-08-20"
 
 keywords: # Not typically populated
 
 subcollection: pattern-intra-org-multitenancy # Use deployable-reference-architectures, or the subcollection value from your toc.yaml file if docs-only.
 
-authors:
-  - name: Sam P. User
-    url: https://linkedin.com/in/sam-p-user
-  - name: "name"
-    url: "linkedIn profile URL"
+
 
 # The release that the reference architecture describes
 version: 1.0
-
-# Use if the reference architecture has deployable code.
-# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
-deployment-url: url
-
-docs: https://cloud.ibm.com/docs/solution-guide
-
-image_source: https://github.com/terraform-ibm-modules/module/reference-architectures/xxx.svg
-
-related_links:
-  - title: 'Title'
-    url: 'https://url.com'
-    description: 'Description.'
-  - title: 'related or follow-on architectures'
-    url: 'https://url'
-    description: 'Description'
 
 # use-case from 'code' column in
 # https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
@@ -69,14 +48,10 @@ production: false
 # Title
 {: #title-id}
 {: toc-content-type="reference-architecture"}
-{: toc-industry="value"}
-{: toc-use-case="value"}
-{: toc-compliance="value"}
-{: toc-version="value"}
+{: toc-version="1.0"}
 
 
 
-:information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs-internal/writing?topic=writing-reference-architectures).
 
 Include a short description, summary, or overview in a single paragraph that follows the title.
 
@@ -148,8 +123,3 @@ _Optional section._ Feedback from users implies that architects want only the hi
 
 ## Next steps
 {: #next-steps}
-
-_Optional section._ Include links to your deployment guide or next steps to get started with the architecture.
-
-
-:exclamation: **Important:** Rename this file `<architecture-name>.md`. For deployable architectures, `<architecture-name>` is the same as the deployable architecture name.
