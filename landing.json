@@ -7,6 +7,18 @@
       {
         "title": "Overview",
         "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
+      },
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
+      },
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
+      },
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
       }
     ]
   },
@@ -15,7 +27,7 @@
       "title": "IBM Cloud Framework for Financial Services reference architecture",
       "description": "IBM Cloud provides three reference architectures that meet security and regulatory requirements",
       "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview",
-      "type": "doc",
+      "type": "article",
       "recommended": true
     },
     {
