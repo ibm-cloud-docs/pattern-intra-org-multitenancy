@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "Multi-tenant best practices on IBM Cloud",
   "introduction": "This is a document intended to provide basic principles to deploy an application to be consumed by multiple customers within the organization",
   "section_topics": {
