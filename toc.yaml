@@ -22,6 +22,10 @@ toc:
       topics:
       - current.md    
   - navgroup:
+      id: architecture
+      topics:
+      - considerations.md  
+  - navgroup:
       id: plan
       topics:
       - multi-tenancy-options.md

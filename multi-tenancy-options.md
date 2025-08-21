@@ -46,3 +46,4 @@ These models represent increasing levels of resource sharing and isolation acros
 - The application itself handles tenant isolation (e.g. via tenant IDs scoped data access).
 - Most flexible but hardest to secure.
 - Common in SaaS platforms with shared backend services.
+- IBM Cloud 
