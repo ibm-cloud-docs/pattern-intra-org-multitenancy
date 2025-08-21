@@ -12,7 +12,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Considerations
-{: #current}
+{: #help}
 
 
 # Key considerations for evaluating multi-tenancy options

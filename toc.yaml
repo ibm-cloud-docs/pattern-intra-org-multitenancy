@@ -22,7 +22,7 @@ toc:
       topics:
       - current.md    
   - navgroup:
-      id: architecture
+      id: help
       topics:
       - considerations.md  
   - navgroup:
