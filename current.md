@@ -25,6 +25,5 @@ Encryption services like Hyper Protect Crypto Services (HPCS) can be shared usin
 
 To support secure connectivity and avoid conflicts, subnet ranges within each VPC must be non-overlapping, especially when using Transit Gateway (TGW) for interconnectivity. Access Control Lists (ACLs) and Security Groups (SGs) should be configured to prevent inter-tenant communication, reinforcing isolation and minimizing risk. These measures collectively ensure a robust, scalable, and secure multi-tenant architecture on IBM Cloud.
 
-[![IBM Cloud](https://example.com/ibm-cloud
 
 ![basic deployment diagram for VPC based environments](/images/current-guidance.jpg){: caption="Basic deployment diagram for VPC based environments" caption-side="bottom"}
