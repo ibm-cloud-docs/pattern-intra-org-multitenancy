@@ -18,6 +18,10 @@ toc:
       topics:
       - overview.md
   - navgroup:
+      id: migrate
+      topics:
+      - current.md    
+  - navgroup:
       id: plan
       topics:
       - multi-tenancy-options.md
