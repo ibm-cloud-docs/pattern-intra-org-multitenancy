@@ -22,11 +22,11 @@ toc:
       topics:
       - current.md    
   - navgroup:
-      id: help
+      id: plan
       topics:
       - considerations.md  
   - navgroup:
-      id: plan
+      id: tutorial
       topics:
       - multi-tenancy-options.md
   - navgroup:
