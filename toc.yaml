@@ -9,7 +9,7 @@ toc:
     path: pattern-intra-org-multitenancy
     audience: solution
     category: solution_docs
-    content-type: reference-architecture
+    content-type: deployment
     description: Best practices for multi-tenant management in IBM Cloud.
     label: Best practices for multi-tenant management in IBM Cloud.
   entries:
@@ -18,17 +18,20 @@ toc:
       topics:
       - overview.md
   - navgroup:
-      id: migrate
-      topics:
-      - current.md    
-  - navgroup:
       id: plan
       topics:
-      - considerations.md  
-  - navgroup:
-      id: tutorial
-      topics:
-      - multi-tenancy-options.md
+      - topicgroup:
+          label: Guidance
+          topics:
+          - topic: current.md
+            navtitle: Current Guidance
+      - topicgroup:
+          label: Options and considerations
+          topics:
+          - topic: considerations.md
+            navtitle: Multi-tenancy considerations
+          - topic: multi-tenancy-options.md
+            navtitle: Multi-tenancy options
   - navgroup:
       id: architecture
       topics:
