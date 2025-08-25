@@ -46,17 +46,13 @@
   "section_architectures":[
     {
       "title": "IBM Cloud Framework for Financial Services reference architecture",
-      "description": "IBM Cloud provides three reference architectures that meet security and regulatory requirements",
       "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview",
-      "type": "article",
-      "recommended": true
+      "deployable": false
     },
     {
       "title": "FAQ for IBM Cloud for Financial Services",
-      "description": "Answers to common questions about IBM Cloud for Financial Services and the IBM Cloud Framework for Financial Services.",
       "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-faqs-framework",
-      "type": "article",
-      "recommended": true
+      "deployable": false
     }
   ]
 }
