@@ -23,18 +23,40 @@
       {
         "title": "Reference Architecture",
         "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-reference-architecture"
-      },
-      {
-        "title": "Resources",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=topic=pattern-intra-org-multitenancy-references"
       }
     ]
   },
-    "section_architectures": [
+  "section_highlights": [
     {
-      "title": "Best practice architecture to support organizational multi-tenancy",
-      "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-reference-architecture",
-      "deployable": false
+      "title": "Best practices and requirements for software as a service",
+      "description": "These best practices summarize some of the most important technical principles for SaaS providers based on the control requirements and implementation guidance of the IBM Cloud Framework for Financial Services",
+      "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-best-practices",
+      "type": "article",
+      "recommended": true
+    }, 
+    {
+      "title": "Best practices and requirements for software",
+      "description": "These best practices summarize some of the most important technical principles for software providers based on the controls and implementation guidance of the IBM Cloud Framework for Financial Services",
+      "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-best-practices-software",
+      "type": "article",
+      "recommended": true
+    }
+
+  ],
+  "section_architectures":[
+    {
+      "title": "IBM Cloud Framework for Financial Services reference architecture",
+      "description": "IBM Cloud provides three reference architectures that meet security and regulatory requirements",
+      "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-reference-architecture-overview",
+      "type": "article",
+      "recommended": true
+    },
+    {
+      "title": "FAQ for IBM Cloud for Financial Services",
+      "description": "Answers to common questions about IBM Cloud for Financial Services and the IBM Cloud Framework for Financial Services.",
+      "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-faqs-framework",
+      "type": "article",
+      "recommended": true
     }
   ]
 }
