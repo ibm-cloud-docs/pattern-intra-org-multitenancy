@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-21"
+lastupdated: "2025-08-25"
 
 subcollection: pattern-intra-org-multitenancy
 
@@ -11,11 +11,8 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Current
-{: #current}
-
-
 # Current guidance for Independent Software Vendors (ISV)
+{: guidance}
 
 To ensure secure and efficient workload deployment, each Business Unit (BU) should operate within its own isolated Virtual Private Cloud (VPC). This isolation allows for tailored configurations and prevents cross-tenant interference. While workloads are separated, management and edge components can be shared across environments to optimize resource usage. Each BU benefits from a dedicated workload environment while leveraging shared infrastructure for centralized control and scalability.
 

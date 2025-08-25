@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-21"
+lastupdated: "2025-08-25"
 
 subcollection: pattern-intra-org-multitenancy
 
@@ -11,11 +11,8 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Considerations
-{: #plan}
-
-
 # Key considerations for evaluating multi-tenancy options
+{: considerations}
 
 
 In multi-tenant cloud architectures, **security and compliance** are foundational. Organizations must adhere to regulations governing data protection, encryption standards, and the handling of sensitive information. This includes ensuring that tenant data is encrypted both in transit and at rest, and that access controls are strictly enforced to meet compliance requirements across jurisdictions.
