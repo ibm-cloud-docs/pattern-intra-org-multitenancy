@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-25"
+lastupdated: "2025-08-26"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -57,3 +57,5 @@ These models represent increasing levels of resource sharing and isolation acros
 - Most flexible but hardest to secure.
 - Common in SaaS platforms with shared backend services.
 - IBM Cloud
+
+![Multitenancy type view](/images/multitenancy-type.svg){: caption="Main evaluation points" caption-side="bottom"}
