@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-25"
+lastupdated: "2025-08-28"
 
 subcollection: pattern-intra-org-multitenancy
 
@@ -28,3 +28,8 @@ Security risks such as the **propagation of vulnerabilities** from a common mana
 **Change management** in a shared environment requires careful coordination. Updates to common tools or infrastructure must be communicated and tested to avoid unintended impacts on tenant workloads. This includes version control, rollback procedures, and tenant-specific validation.
 
 Finally, **operational and financial efficiency** must be balanced. Performance needs and scalability should be addressed through elastic infrastructure and intelligent workload distribution. Monitoring, troubleshooting, and maintenance must be streamlined to support multiple tenants without degradation. And from a financial perspective, cost efficiency should be achieved through thoughtful trade-offs between shared and dedicated resources, with mechanisms for chargeback or showback to ensure transparency in billing.
+
+
+The **degree of consolidation** refers to how efficiently infrastructure can be shared across multiple deployments or tenants, with approaches higher in the stack generally supporting more tenants on the same infrastructure. Conversely, the **degree of isolation** improves as one moves lower in the stack, offering stronger security and performance boundaries between tenants. **Provisioning ease** is typically greater with logical isolation methods implemented higher up, allowing faster creation of new tenants and more flexible resource adjustments. However, the **impact of failures**—whether due to unplanned hardware issues or planned updates—tends to be broader with higher-stack approaches, potentially affecting multiple tenants, whereas lower-stack methods can localize the impact to individual tenants.
+
+![Consolidation vs Isolation](/images/degree-diagram.svg){: caption="Consolidation vs Isolation" caption-side="bottom"}
