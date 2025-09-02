@@ -38,6 +38,8 @@ toc:
             navtitle: Worker Pool Based Isolation    
           - topic: namespace-isolation.md
             navtitle: Namespace Based Isolation   
+          - topic: application-native-multitenancy.md
+            navtitle: Application Native Multitenancy 
   - navgroup:
       id: architecture
       topics:
