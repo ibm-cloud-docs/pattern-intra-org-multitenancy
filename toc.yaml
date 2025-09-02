@@ -36,6 +36,8 @@ toc:
             navtitle: VPC-Based Isolation  
           - topic: worker-pool-isolation.md
             navtitle: Worker Pool Based Isolation    
+          - topic: namespace-isolation.md
+            navtitle: Namespacec Based Isolation   
   - navgroup:
       id: architecture
       topics:
