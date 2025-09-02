@@ -32,6 +32,8 @@ toc:
             navtitle: Multi-tenancy considerations
           - topic: multi-tenancy-options.md
             navtitle: Multi-tenancy options
+          - topic: vpc-isolation.md
+            navtitle: VPC-Based Isolation  
   - navgroup:
       id: architecture
       topics:
