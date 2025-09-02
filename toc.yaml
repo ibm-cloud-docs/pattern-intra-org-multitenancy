@@ -34,6 +34,8 @@ toc:
             navtitle: Multi-tenancy options
           - topic: vpc-isolation.md
             navtitle: VPC-Based Isolation  
+          - topic: worker-pool-isolation.md
+            navtitle: Worker Pool Based Isolation    
   - navgroup:
       id: architecture
       topics:
