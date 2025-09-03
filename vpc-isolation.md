@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-02"
+lastupdated: "2025-09-03"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -10,6 +10,8 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 # VPC isolation
+
+![VPC based isolation reference](/images/current-guidance.drawio.svg){: caption="VPC based isolation" caption-side="bottom"}
 
 ## Advantages
 Full isolation ensures enhanced security and performance by providing dedicated resources, tailored configurations, and operational independence across networking and storage. This setup simplifies chargeback processes and effectively prevents the noisy neighbor problem, leading to more predictable network performance. Each tenant benefits from independent scaling, allowing for optimized resource allocation and better disaster recovery and fault isolation. Updates are isolated, minimizing the risk of impacting other tenants, and infrastructure-level tenant-specific SCC scans can be implemented to further strengthen security and compliance.

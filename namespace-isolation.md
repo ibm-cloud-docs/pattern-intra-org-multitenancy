@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-02"
+lastupdated: "2025-09-03"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -10,6 +10,8 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 # Namespace based isolation
+
+![Namespace based isolation reference](/images/namespace-isolation.svg){: caption="Namespace based isolation" caption-side="bottom"}
 
 ## Advantages
 Leveraging shared infrastructure and minimizing operational overhead enhances **cost efficiency** across the environment. By managing a **single cluster** rather than multiple ones, organizations can significantly **reduce complexity**. This unified approach also enables **efficient scaling** and **resource allocation** based on demand,
@@ -46,4 +48,3 @@ Disable the **internal image registry** if COS is not encrypted. [IBM Cloud Regi
 
 ## Determine suitability
 When evaluating a multi-tenant architecture, it's important to assess whether the **ISV has the operational expertise** required to manage **namespace isolation** effectively. Key considerations include whether **namespaces, quotas, and policies** can provide **sufficient isolation** for sensitive environments such as banking. **Security and compliance risks** must be carefully weighed to determine if they are within acceptable limits. Additionally, it's crucial to ensure that **workload performance** remains unaffected by **shared cluster-scoped resources**. Finally, the potential **cost efficiency** gained by sharing compute resources across tenants should be evaluated to determine if it delivers meaningful benefits without compromising performance or security.
-

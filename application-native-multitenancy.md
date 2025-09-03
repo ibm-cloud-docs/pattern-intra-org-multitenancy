@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-02"
+lastupdated: "2025-09-03"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -10,6 +10,8 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 # Application Native Multitenancy
+
+![Application native Multi-tenancy](/images/application-multitenancy.svg){: caption="Application native Multi-tenancy" caption-side="bottom"}
 
 ## Advantages
 ### Multi-Tenant SaaS Platform Benefits
@@ -93,4 +95,3 @@ If **cost is a higher priority**, and the deployment can **tolerate some level o
 - Meets GDPR, CCPA, HIPAA, or other regulatory requirements for multi-tenant environments.
 - Provides tenant-level compliance reports if required.
 - Requires agreement from different business units regarding willingness to share, especially in cases involving different types of data classification.
-

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-02"
+lastupdated: "2025-09-03"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -10,6 +10,7 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 # Worker Pool isolation
+![Worker pool based isolation reference](/images/worker-pool-isolation.svg){: caption="Worker pool based isolation" caption-side="bottom"}
 
 ## Advantages
 Managing a single cluster can simplify operations by reducing administrative tasks and overall complexity compared to managing multiple clusters. It also facilitates easier chargeback processes and helps prevent the noisy neighbor problem, ensuring more predictable performance across workloads. Standardized management processes, tools, and monitoring within a unified environment contribute to operational consistency and efficiency. Additionally, updates and patches can be streamlined by applying them once across the entire cluster, minimizing maintenance efforts and reducing the risk of errors.
