@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-08-28"
+lastupdated: "2025-09-10"
 
 subcollection: pattern-intra-org-multitenancy
 

@@ -9,20 +9,24 @@
         "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-overview"
       },
       {
+        "title": "Best practices for multi-tenant management in IBM Cloud",
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-best_practices"
+      },      
+      {
         "title": "Current guidance for Independent Software Vendors (ISV)",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-guidance"
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-current_guidance"
       },
       {
-        "title": "Multi-tenancy options",
+        "title": "Key considerations",
         "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-options"
       },
       {
         "title": "Key considerations for multi-tenancy options",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-considerations"
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-key_considerations"
       },
       {
         "title": "Reference Architecture",
-        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-reference-architecture"
+        "href": "/docs/pattern-intra-org-multitenancy?topic=pattern-intra-org-multitenancy-reference-multi-tenancy-options"
       }
     ]
   },

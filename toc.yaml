@@ -21,17 +21,26 @@ toc:
       id: plan
       topics:
       - topicgroup:
-          label: Guidance
+          label: Best practices
           topics:
-          - topic: current.md
-            navtitle: Current Guidance
+          - topic: best_practices.md
+            navtitle: Best practices for multitenant management
+      - topicgroup:
+          label: Current guidance for ISV's
+          topics:
+          - topic: current_guidance.md
+            navtitle: Current guidance for ISV's       
+      - topicgroup:
+          label: Key consideration
+          topics:
+          - topic: key_considerations.md
+            navtitle: Key considerations for evaluating multitenancy options      
+  - navgroup:
+      id: howto
+      topics:                   
       - topicgroup:
           label: Options and considerations
           topics:
-          - topic: considerations.md
-            navtitle: Multi-tenancy considerations
-          - topic: multi-tenancy-options.md
-            navtitle: Multi-tenancy options
           - topic: vpc-isolation.md
             navtitle: VPC-Based Isolation  
           - topic: worker-pool-isolation.md
@@ -41,10 +50,6 @@ toc:
           - topic: application-native-multitenancy.md
             navtitle: Application Native Multitenancy 
   - navgroup:
-      id: architecture
-      topics:
-      - reference-architecture.md
-  - navgroup:
       id: reference
       topics:
-      - references.md
+      - summary.md
