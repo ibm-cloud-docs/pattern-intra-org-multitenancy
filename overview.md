@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-25"
+lastupdated: "2025-09-12"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -14,11 +14,10 @@ keywords:
 # Overview
 {: #overview}
 
-The **IBM Cloud for Financial Services** is a cloud platform built specifically for the needs of the Financial Services Industry.
 
 The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} architecture design that outlines the basic principles to deploy an application to be consumed by multiple customers within the organization.
 
-As explained in [IBM Cloud Framework for Financial Services – Shared Account Organization](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization) is intended for single customers, however in some cases there is need for different business units in the same organization to be managed by the same operator.
+As explained in [IBM Cloud Shared Account Organization](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization) is intended for single customers, however in some cases there is need for different business units in the same organization to be managed by the same operator.
 
 This document is organized in the following areas:
 - Security & Compliance
