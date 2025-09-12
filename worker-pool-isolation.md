@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-03"
+lastupdated: "2025-09-12"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -13,12 +13,46 @@ keywords:
 ![Worker pool based isolation reference](/images/worker-pool-isolation.svg){: caption="Worker pool based isolation" caption-side="bottom"}
 
 ## Advantages
-Managing a single cluster can simplify operations by reducing administrative tasks and overall complexity compared to managing multiple clusters. It also facilitates easier chargeback processes and helps prevent the noisy neighbor problem, ensuring more predictable performance across workloads. Standardized management processes, tools, and monitoring within a unified environment contribute to operational consistency and efficiency. Additionally, updates and patches can be streamlined by applying them once across the entire cluster, minimizing maintenance efforts and reducing the risk of errors.
+- **Easier for chargeback**
+
+- **Noisy neighbor problem prevention**
+
+- **Standardized management processes, tools, and monitoring across a unified environment**
+
+- May **streamline updates and patches** by applying them once across a single cluster, reducing maintenance efforts and potential errors
+
+- **Decreased administrative tasks** compared to cluster-based setups
+- May **reduce complexity** by managing one cluster instead of multiple
+
 
 
 ## Challenges
-Operating within a single cluster can lead to higher operational expenses and underutilized resources, especially when workloads are not evenly distributed. It often results in increased administrative tasks, although these can be mitigated with appropriate automation strategies. Unlike cluster or VPC-based isolation, this approach does not offer a clear cost advantage. Additionally, any issues affecting the cluster will impact all tenants, potentially leading to broader service disruptions.
+- **Higher operational expenses**
+
+- **Underutilized resources**
+
+- **Increased administrative tasks**  
+  _(Can be overcome with appropriate automations in place)_
+
+- **Does not provide cost advantage** over cluster/VPC-based isolation
+
+- **All tenants will be impacted** by cluster issues
+
 
 
 ## Determine suitability
-Before deciding to run separate clusters for each environment, organizations must evaluate whether they can support the associated costs. It's also important to assess whether the workload demands cluster-level isolation to meet strict regulatory compliance requirements. Deployment considerations may include the need for tenant-specific IAM and policies per environment, as well as the criticality of preventing cross-tenant access at the network level. Connectivity needs might require separate VPNs or Direct Links for each tenant. Additionally, maintaining different versions or configurations per tenant could be necessary, along with better blast radius control to minimize the impact of failures. Finally, data residency regulations may mandate physical data separation for each tenant, further influencing infrastructure decisions.
+- **Can the organization support the cost for running separate clusters for each environment?**
+
+- **Does the workload require cluster-level isolation for strict regulatory compliance?**
+
+- **Does the deployment need tenant-specific IAM & policies per environment?**
+
+- **Is cross-tenant access prevention critical at the network level?**
+
+- **Is separate VPN or Direct Link required for each tenant’s connectivity needs?**
+
+- **Do different versions or configurations need to be maintained per tenant?**
+
+- **Is there a requirement for better blast radius control?**
+
+- **Do data residency regulations require physical data separation per tenant?**
