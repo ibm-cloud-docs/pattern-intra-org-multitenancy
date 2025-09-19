@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-19"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -9,15 +9,9 @@ keywords:
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-# VPC isolation
+# Summary
 
-![VPC based isolation reference](/images/current-guidance.drawio.svg){: caption="VPC based isolation" caption-side="bottom"}
+![Factors](/images/spider.svg){: caption="Factors influencing decisions" caption-side="bottom"}
 
-## Advantages
-Full isolation ensures enhanced security and performance by providing dedicated resources, tailored configurations, and operational independence across networking and storage. This setup simplifies chargeback processes and effectively prevents the noisy neighbor problem, leading to more predictable network performance. Each tenant benefits from independent scaling, allowing for optimized resource allocation and better disaster recovery and fault isolation. Updates are isolated, minimizing the risk of impacting other tenants, and infrastructure-level tenant-specific SCC scans can be implemented to further strengthen security and compliance.
-
-## Challenges
-Higher operational expenses can be a challenge, often driven by underutilized resources and increased administrative tasks. These issues can be mitigated through automation using Infrastructure as Code (IaC), which streamlines operations and reduces manual overhead. Additionally, effective IP address planning is essential to maintain network efficiency and avoid conflicts, further contributing to smoother operations and reduced complexity.
-
-## Determine suitability
-Before deciding to run separate clusters for each environment, organizations must evaluate whether they can support the associated costs. It's also important to assess whether the workload demands cluster-level isolation to meet strict regulatory compliance requirements. Deployment considerations may include the need for tenant-specific IAM and policies per environment, as well as the criticality of preventing cross-tenant access at the network level. Connectivity needs might require separate VPNs or Direct Links for each tenant. Additionally, maintaining different versions or configurations per tenant could be necessary, along with better blast radius control to minimize the impact of failures. Finally, data residency regulations may mandate physical data separation for each tenant, further influencing infrastructure decisions.
+## Summary options
+VPC or Application Native models are recommended for implementing multitenancy due to their scalability and isolation benefits. While account isolation is not mandatory for ISVs, adopting it can lead to increased operational complexity. Namespace isolation, on the other hand, poses risks such as single points of failure, noisy neighbor issues, and heightened demands for operational and security enforcement. Additionally, using worker pools or multi-cluster setups does not offer significant advantages over the VPC model. For a detailed breakdown of the factors and data referenced in the chart, please refer to this diagram.
