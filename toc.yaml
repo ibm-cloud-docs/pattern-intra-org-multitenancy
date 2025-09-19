@@ -25,11 +25,6 @@ toc:
       id: plan
       topics:
       - topicgroup:
-          label: Best practices
-          topics:
-          - topic: best_practices.md
-            navtitle: Best practices for multitenant management
-      - topicgroup:
           label: Current guidance for ISV's
           topics:
           - topic: current_guidance.md
