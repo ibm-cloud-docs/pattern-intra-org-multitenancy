@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-09-19"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -30,5 +30,6 @@ This document is organized in the following areas:
 *	Accelerate and simplify solution design by providing a standard IBM Cloud deployment architecture reference following the [IBM Architecture Framework](https://cloud.ibm.com/docs/architecture-framework)
 *	Provide a prescriptive, end-2-end enterprise-class solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.
 *	Ensure requirements can be met from a performance, system availability and security perspective.
+
 
 The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Design Framework](https://test.cloud.ibm.com/docs/architecture-framework).
