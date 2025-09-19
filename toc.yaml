@@ -16,7 +16,11 @@ toc:
   - navgroup:
       id: overview
       topics:
-      - overview.md
+      - topicgroup:
+          label: Overview
+          topics:
+          - topic: overview.md
+            navtitle: Overview multi-tenant management in IBM Cloud.
   - navgroup:
       id: plan
       topics:
