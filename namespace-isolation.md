@@ -9,11 +9,15 @@ keywords:
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
 # Namespace based isolation
+{: #namespace}
 
 ![Namespace based isolation reference](/images/namespace-isolation.svg){: caption="Namespace based isolation" caption-side="bottom"}
 
 ## Advantages
+{: #advantages}
+
 - **Cost efficiency through shared infrastructure and operational overhead**
 - **Reduces complexity by managing one cluster instead of multiple**
 - **Facilitates efficient scaling and resource allocation based on demand without infrastructure duplication**
@@ -22,6 +26,8 @@ keywords:
 
 
 ## Challenges
+{: #challenges}
+
 - **Shared cluster-scoped resources can cause single point of failure (All BU affected)?**
 - **Ingress Controller** – Use multiple instances
 - **Service Mesh** – Is shared instance acceptable?
@@ -38,6 +44,8 @@ keywords:
 
 
 ## Best practices
+{: #best-practice}
+
 - **Access Control - Use policies to ensure that tenants can access only what they should have access to (RBAC)**
 
 **Fair Sharing** should be enforced by setting limits per tenant on:
@@ -54,11 +62,15 @@ Use an **Admission Controller** to enforce which storage classes are allowed wit
 Disable the **internal image registry** if COS is not encrypted. [IBM Cloud Registry Guidance](https://cloud.ibm.com/docs/openshift?
 
 ## Enhancement requests
+{: #enhancement}
+
 - Implementation check
 - ER for Workload Protection Operator
 - SCC Multi tenant Profile
 
 ## Determine suitability
+{: #suitability}
+
 - **Does the ISV have operational expertise for managing namespace isolation?**
 - **Can namespaces, quotas, and policies ensure enough isolation for the bank?**
 - **Are security and compliance risks acceptable?**

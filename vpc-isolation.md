@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-09-22"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -9,11 +9,15 @@ keywords:
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
 # VPC isolation
+{: #VPC}
 
 ![VPC based isolation reference](/images/current-guidance.drawio.svg){: caption="VPC based isolation" caption-side="bottom"}
 
 ## Advantages
+{: #advantages}
+
 - **Full isolation for security and performance**
 - **Dedicated resources**, tailored configurations & operational independence (networking, storage)
 - **Easier for chargeback**
@@ -26,18 +30,22 @@ keywords:
 
 
 ## Challenges
+{: #challenges}
+
 - **Higher operational expenses**
-  _Solution: Automation via IaC_
+   _Solution: Automation via IaC_
 
 - **Underutilized resources**
 
-- **Increased administrative tasks**  
-  _Solution: Automation via IaC_
+- **Increased administrative tasks**
+   _Solution: Automation via IaC_
 
 - **IP address planning**
 
 
 ## Determine suitability
+{: #suitability}
+
 - **Can the organization support the cost for running separate clusters for each environment?**
 
 - **Does the workload require cluster-level isolation for strict regulatory compliance?**

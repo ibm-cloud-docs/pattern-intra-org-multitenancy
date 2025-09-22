@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-09-22"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -9,10 +9,15 @@ keywords:
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
 # Worker Pool isolation
+{: #worker-pool}
+
 ![Worker pool based isolation reference](/images/worker-pool-isolation.svg){: caption="Worker pool based isolation" caption-side="bottom"}
 
 ## Advantages
+{: #advantages}
+
 - **Easier for chargeback**
 
 - **Noisy neighbor problem prevention**
@@ -27,12 +32,14 @@ keywords:
 
 
 ## Challenges
+{: #challenges}
+
 - **Higher operational expenses**
 
 - **Underutilized resources**
 
-- **Increased administrative tasks**  
-  _(Can be overcome with appropriate automations in place)_
+- **Increased administrative tasks**
+   _(Can be overcome with appropriate automations in place)_
 
 - **Does not provide cost advantage** over cluster/VPC-based isolation
 
@@ -41,6 +48,8 @@ keywords:
 
 
 ## Determine suitability
+{: #suitability}
+
 - **Can the organization support the cost for running separate clusters for each environment?**
 
 - **Does the workload require cluster-level isolation for strict regulatory compliance?**
