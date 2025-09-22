@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-03"
+lastupdated: "2025-09-22"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -14,19 +14,31 @@ keywords:
 ![Namespace based isolation reference](/images/namespace-isolation.svg){: caption="Namespace based isolation" caption-side="bottom"}
 
 ## Advantages
-Leveraging shared infrastructure and minimizing operational overhead enhances **cost efficiency** across the environment. By managing a **single cluster** rather than multiple ones, organizations can significantly **reduce complexity**. This unified approach also enables **efficient scaling** and **resource allocation** based on demand,
+- **Cost efficiency through shared infrastructure and operational overhead**
+- **Reduces complexity by managing one cluster instead of multiple**
+- **Facilitates efficient scaling and resource allocation based on demand without infrastructure duplication**
+- **Standardized management processes, tools, and monitoring across a unified environment**
+
 
 
 ## Challenges
-Shared cluster-scoped resources can introduce a **single point of failure**, potentially impacting all business units. To mitigate this, deploying **multiple instances of the Ingress Controller** is recommended. For **Service Mesh**, it's important to evaluate whether a **shared instance** is acceptable based on tenant requirements. **Storage provisioning** also requires careful consideration—either through **dedicated storage clusters per tenant** or a **shared storage cluster**, depending on isolation needs.
+- **Shared cluster-scoped resources can cause single point of failure (All BU affected)?**
+- **Ingress Controller** – Use multiple instances
+- **Service Mesh** – Is shared instance acceptable?
+- **Storage provider** – Dedicated storage clusters per tenant or shared storage cluster?
+- **Isolation of Application Logs** – Platform scenario
+- **Monitoring level Isolation of Metrics for customer** – Platform scenario
+- **Noisy Neighbour** – See *Fair Sharing* in Best Practices
+- **Multi Namespace Deployment** for each tenant
+- **Chargeback** – Global infrastructure auto scaling
+- **SLA Agreement** on the environments
+- **Privileged pods**
+- **Updates will affect all tenants**
 
-**Application log isolation** and **monitoring-level metric separation** are crucial in platform scenarios to ensure tenant-specific visibility and control. Addressing the **"noisy neighbor"** issue involves implementing **fair sharing practices**. Deploying **multiple namespaces per tenant** supports better isolation and management.
-
-**Chargeback mechanisms** should align with **global infrastructure auto-scaling** to ensure accurate cost attribution. Clear **SLA agreements** must be established for each environment, especially when **privileged pods** are involved. Lastly, **updates to the platform** can affect all tenants, so **change management and communication strategies** must be robust.
 
 
 ## Best practices
-**Access Control** is essential in multi-tenant environments. Use policies such as **Role-Based Access Control (RBAC)** to ensure tenants can only access resources they are authorized to.
+- **Access Control - Use policies to ensure that tenants can access only what they should have access to (RBAC)**
 
 **Fair Sharing** should be enforced by setting limits per tenant on:
 - Resource Quotas
@@ -47,4 +59,8 @@ Disable the **internal image registry** if COS is not encrypted. [IBM Cloud Regi
 - SCC Multi tenant Profile
 
 ## Determine suitability
-When evaluating a multi-tenant architecture, it's important to assess whether the **ISV has the operational expertise** required to manage **namespace isolation** effectively. Key considerations include whether **namespaces, quotas, and policies** can provide **sufficient isolation** for sensitive environments such as banking. **Security and compliance risks** must be carefully weighed to determine if they are within acceptable limits. Additionally, it's crucial to ensure that **workload performance** remains unaffected by **shared cluster-scoped resources**. Finally, the potential **cost efficiency** gained by sharing compute resources across tenants should be evaluated to determine if it delivers meaningful benefits without compromising performance or security.
+- **Does the ISV have operational expertise for managing namespace isolation?**
+- **Can namespaces, quotas, and policies ensure enough isolation for the bank?**
+- **Are security and compliance risks acceptable?**
+- **Is workload performance unaffected by shared resources (Cluster scoped resources)?**
+- **Is the cost efficiency by sharing compute resources across tenants beneficial?**
