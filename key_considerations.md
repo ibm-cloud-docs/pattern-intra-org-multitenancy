@@ -14,7 +14,7 @@ keywords:
 # Key considerations for evaluating multi-tenancy options
 {: #considerations}
 
-Learn about the key considerations and decisions that you might need to make as you evaluate multi-tenant options for your organization. 
+There are a set of key considerations and decisions that you might need to make as you evaluate multi-tenant options for your organization.
 {: shortdesc}
 
 Security and compliance
@@ -29,7 +29,7 @@ Auditability
 Capacity and workload management
 :   Capacity and workload management must be designed to meet the service-level agreements (SLAs) of all tenants, particularly during peak usage periods. Shared management planes and tools should be resilient and scalable, with mechanisms to prioritize workloads and prevent resource contention.
 
-Mitigating security concerns 
+Mitigating security concerns
 :   Security risks such as the propagation of vulnerabilities from a common management VPC to tenant environments must be mitigated. Isolation mechanisms and strict access controls should be in place to prevent lateral movement of threats. Similarly, if a management VPC is compromised, it might place multiple tenants at risk, so robust security measures that include monitoring, intrusion detection, and least-privilege access are essential.
 
 Change management

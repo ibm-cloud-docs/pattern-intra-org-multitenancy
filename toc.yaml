@@ -21,20 +21,21 @@ toc:
       id: plan
       topics:
       - topic: current_guidance.md
-        navtitle: Current guidance for ISVs
-      - key_considerations.md  
+        navtitle: Guidance for tenants
+      - key_considerations.md
   - navgroup:
       id: howto
-      topics:                   
+      topics:
       - vpc-isolation.md
       - worker-pool-isolation.md
       - namespace-isolation.md
       - application-native-multitenancy.md
-  - navgroup:
-      id: reference
-      topics:
       - topicgroup:
           label: summary
           topics:
           - topic: summary.md
-            navtitle: Summary multi-tenant management in IBM Cloud.      
+            navtitle: Summary multi-tenant management in IBM Cloud.
+  - navgroup:
+      id: reference
+      topics:
+      - references.md
