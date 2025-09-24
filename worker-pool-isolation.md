@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-22"
+lastupdated: "2025-09-24"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -10,58 +10,49 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Worker Pool isolation
+# Isolating worker pools 
 {: #worker-pool}
 
-![Worker pool based isolation reference](/images/worker-pool-isolation.svg){: caption="Worker pool based isolation" caption-side="bottom"}
+Isolating tenants by using worker pools involves multiple tenants that share a cluster, but use dedicated node pools, also known as worker pools, in isolation from other tenants. 
+{: shortdesc}
+
+![Worker pool-based isolation reference](/images/worker-pool-isolation.svg){: caption="Worker pool based isolation" caption-side="bottom"}
 
 ## Advantages
 {: #advantages}
 
-- **Easier for chargeback**
+Worker pool isolation as a strategy includes the following advantages: 
 
-- **Noisy neighbor problem prevention**
-
-- **Standardized management processes, tools, and monitoring across a unified environment**
-
-- May **streamline updates and patches** by applying them once across a single cluster, reducing maintenance efforts and potential errors
-
-- **Decreased administrative tasks** compared to cluster-based setups
-- May **reduce complexity** by managing one cluster instead of multiple
-
+- Easier to calculate chargebacks than other approaches. 
+- Prevents the noisy neighbor problem. 
+- Standardized management processes, tools, and monitoring across a unified environment. 
+- Can streamline updates and fixes by applying them one time across a single cluster, reducing maintenance efforts and potential errors. 
+- Decreased administrative tasks compared to cluster-based setups. 
+- Can reduce complexity by managing one cluster instead of many. 
 
 
 ## Challenges
 {: #challenges}
 
-- **Higher operational expenses**
+Isolating worker pools includes the following challenges for teams: 
 
-- **Underutilized resources**
-
-- **Increased administrative tasks**
-   _(Can be overcome with appropriate automations in place)_
-
-- **Does not provide cost advantage** over cluster/VPC-based isolation
-
-- **All tenants will be impacted** by cluster issues
-
+- Higher operational expenses. 
+- Underutilized resources. 
+- Increased administrative tasks, which can be mitigated by using infrastructure-as-code automation. 
+- There is no cost advantage over cluster or VPC-based isolation. 
+- All tenants are impacted by cluster issues. 
 
 
 ## Determine suitability
 {: #suitability}
 
-- **Can the organization support the cost for running separate clusters for each environment?**
+As you evaluate worker pool-based isolation, consider the following questions:
 
-- **Does the workload require cluster-level isolation for strict regulatory compliance?**
-
-- **Does the deployment need tenant-specific IAM & policies per environment?**
-
-- **Is cross-tenant access prevention critical at the network level?**
-
-- **Is separate VPN or Direct Link required for each tenant’s connectivity needs?**
-
-- **Do different versions or configurations need to be maintained per tenant?**
-
-- **Is there a requirement for better blast radius control?**
-
-- **Do data residency regulations require physical data separation per tenant?**
+- Can the organization support the cost for running separate clusters for each environment?
+- Does the workload require cluster-level isolation for strict regulatory compliance?
+- Does the deployment need tenant-specific IAM policies per environment?
+- Is cross-tenant access prevention critical at the network level?
+- Is a separate VPN or Direct Link required for each tenant’s connectivity needs?
+- Do different versions or configurations need to be maintained per tenant?
+- Is there a requirement for better blast radius control?
+- Do data residency regulations require physical data separation per tenant?

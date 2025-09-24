@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-22"
+lastupdated: "2025-09-24"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -10,69 +10,74 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Namespace based isolation
+# Isolating namespaces 
 {: #namespace}
+
+With namespace-based isolation, tenants share a cluster. Within that cluster, namespaces are used to logically separate each tenant's resources. 
+{: shortdesc}
+
 
 ![Namespace based isolation reference](/images/namespace-isolation.svg){: caption="Namespace based isolation" caption-side="bottom"}
 
 ## Advantages
 {: #advantages}
 
-- **Cost efficiency through shared infrastructure and operational overhead**
-- **Reduces complexity by managing one cluster instead of multiple**
-- **Facilitates efficient scaling and resource allocation based on demand without infrastructure duplication**
-- **Standardized management processes, tools, and monitoring across a unified environment**
+Namespace-based isolation provides the following advantages for your organization: 
+
+- Cost efficiency by using shared infrastructure.
+- Reduces complexity by managing one cluster instead of many clusters. 
+- Facilitates efficient scaling and resource allocation based on demand without infrastructure duplication.
+- Standardized management processes, tools, and monitoring across a unified environment.
 
 
 
 ## Challenges
 {: #challenges}
 
-- **Shared cluster-scoped resources can cause single point of failure (All BU affected)?**
-- **Ingress Controller** – Use multiple instances
-- **Service Mesh** – Is shared instance acceptable?
-- **Storage provider** – Dedicated storage clusters per tenant or shared storage cluster?
-- **Isolation of Application Logs** – Platform scenario
-- **Monitoring level Isolation of Metrics for customer** – Platform scenario
-- **Noisy Neighbour** – See *Fair Sharing* in Best Practices
-- **Multi Namespace Deployment** for each tenant
-- **Chargeback** – Global infrastructure auto scaling
-- **SLA Agreement** on the environments
-- **Privileged pods**
-- **Updates will affect all tenants**
+Namespace-based isolation includes the following challenges for your organization: 
+
+- Shared cluster-scoped resources can cause a single point of failure that might impact all tenants. 
+- Updates impact all tenants. 
+- Requires multiple instances of the Ingress Controller. 
+- Requires a shared dedicated infrastructure layer, also known as a service mesh. 
+- Storage provider decisions, such as using shared storage clusters versus dedicated storage clusters per tenant. 
+- Isolated application logs. 
+- Isolated metrics for customers. 
+- The noisy neighbor problem can be mitigated by enforcing fair sharing per tenant. 
+- Multi-namespace deployments for each tenant.
+- Chargebacks are more challenging with global infrastructure auto scaling. 
+- The SLA agreement must be accepted on the environments.
+- Privileged pods.
+
+### Mitigating challenges 
+{: #mitigate-challenges}
+
+Namespace-based isolation requires stringent access control and isolation for each tenant, reducing the odds of data breaches from tenant to tenant. 
+
+Access control
+:   Use policies to help ensure that tenants can access only what they require access to. 
+
+Fair sharing
+:   Enforce fair sharing by setting limits per tenant on the number of resources, pod priority, quality of service, taints and tolerations, and pod affinity or anti-affinity. 
+
+Isolation
+:   Isolation is critical to prevent tenants from accessing each other's workloads and secrets. Assign different storage classes to each tenant, ideally linked to their own encryption keys.
+
+Admission controller 
+:   Use an admission controller to enforce which storage classes are allowed within specific namespaces. [Learn more about Kubernetes admission controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/). And, use a separate COS/ICD instance for each tenant.
+
+Internal image registry
+:   Disable the internal image registry if Object Storage is not encrypted. For more information, go to [IBM Cloud Registry Guidance](https://cloud.ibm.com/docs/openshift?)
 
 
-
-## Best practices
-{: #best-practice}
-
-- **Access Control - Use policies to ensure that tenants can access only what they should have access to (RBAC)**
-
-**Fair Sharing** should be enforced by setting limits per tenant on:
-- Resource Quotas
-- Pod Priority
-- Quality of Service
-- Taints & Tolerations
-- Pod Affinity / Anti-affinity
-
-**Isolation** is critical to prevent tenants from accessing each other's workloads and secrets. Assign **different storage classes** to each tenant, ideally linked to their own **encryption keys**.
-
-Use an **Admission Controller** to enforce which storage classes are allowed within specific namespaces. [Learn more about Kubernetes Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllersy. Use **separate COS/ICD instances** for each tenant.
-
-Disable the **internal image registry** if COS is not encrypted. [IBM Cloud Registry Guidance](https://cloud.ibm.com/docs/openshift?
-
-## Enhancement requests
-{: #enhancement}
-
-- Implementation check
-- ER for Workload Protection Operator
-- SCC Multi tenant Profile
 
 ## Determine suitability
 {: #suitability}
 
-- **Does the ISV have operational expertise for managing namespace isolation?**
-- **Can namespaces, quotas, and policies ensure enough isolation for the bank?**
-- **Are security and compliance risks acceptable?**
-- **Is workload performance unaffected by shared resources (Cluster scoped resources)?**
-- **Is the cost efficiency by sharing compute resources across tenants beneficial?**
+As you evaluate namespace-based isolation, consider the following questions:
+
+- Does the ISV have operational expertise for managing namespace isolation?
+- Can namespaces, quotas, and policies ensure enough isolation for the bank?
+- Are security and compliance risks acceptable?
+- Is workload performance unaffected by shared cluster-scoped resources?
+- Is the cost efficiency by sharing compute resources across tenants beneficial?

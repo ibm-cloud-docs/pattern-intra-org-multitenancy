@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-09-24"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -11,25 +11,17 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Overview
+# Multi-tenant management in {{site.data.keyword.IBM_notm}}
 {: #overview}
 
+Learn the basic principles to help you deploy an application to be used by multiple users within your organization. 
+{: shortdesc}
 
-The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} architecture design that outlines the basic principles to deploy an application to be consumed by multiple customers within the organization.
+As explained in [Organizing IBM Cloud accounts and resources](/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization), each deployment is intended for a single customer. However, there are some cases where you might need different business units in the same organization to be managed by the same operator. 
 
-As explained in [IBM Cloud Shared Account Organization](https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-shared-account-organization) is intended for single customers, however in some cases there is need for different business units in the same organization to be managed by the same operator.
-
-This document is organized in the following areas:
-- Security & Compliance
-- Performance
-- Scalability
-- Operational Efficiency
-- Cost Efficiency
-
-
-*	Accelerate and simplify solution design by providing a standard IBM Cloud deployment architecture reference following the [IBM Architecture Framework](https://cloud.ibm.com/docs/architecture-framework)
+*	Accelerate and simplify solution design by providing a standard {{site.data.keyword.cloud_notm}} reference architecture following the [{{site.data.keyword.IBM_notm}} architecture design framework](/docs/architecture-framework)
 *	Provide a prescriptive, end-2-end enterprise-class solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.
-*	Ensure requirements can be met from a performance, system availability and security perspective.
+*	Help ensure requirements can be met from a performance, system availability, and security perspectives.
 
 
-The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Design Framework](https://test.cloud.ibm.com/docs/architecture-framework).
+The architecture design framework provides a consistent approach to designing cloud solutions by addressing requirements across a set of aspects and domains. These architectural areas need to be considered for any enterprise solution, regardless of the underlying technology that supports it. For more information, go to [Introduction to the Architecture Design Framework](/docs/architecture-framework).

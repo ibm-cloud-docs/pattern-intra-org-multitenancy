@@ -16,38 +16,20 @@ toc:
   - navgroup:
       id: overview
       topics:
-      - topicgroup:
-          label: Overview
-          topics:
-          - topic: overview.md
-            navtitle: Overview multi-tenant management in IBM Cloud.
+      - overview.md
   - navgroup:
       id: plan
       topics:
-      - topicgroup:
-          label: Current guidance for ISV's
-          topics:
-          - topic: current_guidance.md
-            navtitle: Current guidance for ISV's       
-      - topicgroup:
-          label: Key consideration
-          topics:
-          - topic: key_considerations.md
-            navtitle: Key considerations for evaluating multitenancy options      
+      - topic: current_guidance.md
+        navtitle: Current guidance for ISVs
+      - key_considerations.md  
   - navgroup:
       id: howto
       topics:                   
-      - topicgroup:
-          label: Options and considerations
-          topics:
-          - topic: vpc-isolation.md
-            navtitle: VPC-Based Isolation  
-          - topic: worker-pool-isolation.md
-            navtitle: Worker Pool Based Isolation    
-          - topic: namespace-isolation.md
-            navtitle: Namespace Based Isolation   
-          - topic: application-native-multitenancy.md
-            navtitle: Application Native Multitenancy 
+      - vpc-isolation.md
+      - worker-pool-isolation.md
+      - namespace-isolation.md
+      - application-native-multitenancy.md
   - navgroup:
       id: reference
       topics:
