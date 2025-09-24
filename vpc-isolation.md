@@ -13,7 +13,7 @@ keywords:
 # Isolating VPCs
 {: #VPC}
 
-Isolating Virtual Private Clouds (VPC) is a multi-tenant strategy where each tenant operates within its own VPC.
+Isolating Virtual Private Clouds (VPC) is a multitenant strategy where each tenant operates within its own VPC.
 {: shortdesc}
 
 ![VPC-based isolation reference](/images/current-guidance.drawio.svg){: caption="VPC-based isolation" caption-side="bottom"}

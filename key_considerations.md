@@ -11,14 +11,14 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Key considerations for evaluating multi-tenancy options
+# Key considerations for evaluating multitenancy options
 {: #considerations}
 
-There are a set of key considerations and decisions that you might need to make as you evaluate multi-tenant options for your organization.
+There are a set of key considerations and decisions that you might need to make as you evaluate multitenant options for your organization.
 {: shortdesc}
 
 Security and compliance
-:   In multi-tenant cloud architectures, security and compliance are foundational. Organizations must adhere to regulations that govern data protection, encryption standards, and the handling of sensitive information. This practice includes helping ensure that tenant data is encrypted both in transit and at rest, and that access controls are strictly enforced to meet compliance requirements across jurisdictions.
+:   In multitenant cloud architectures, security and compliance are foundational. Organizations must adhere to regulations that govern data protection, encryption standards, and the handling of sensitive information. This practice includes helping ensure that tenant data is encrypted both in transit and at rest, and that access controls are strictly enforced to meet compliance requirements across jurisdictions.
 
 Data separation
 :   Data separation is critical to prevent co-mingling of data between tenants. Effective controls and processes must be in place to help ensure that each tenant’s data remains isolated, especially when shared infrastructure is used. This includes clear policies around key ownership and account management to maintain data boundaries and accountability.

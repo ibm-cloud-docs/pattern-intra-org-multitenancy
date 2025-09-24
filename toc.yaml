@@ -10,8 +10,8 @@ toc:
     audience: solution
     category: solution_docs
     content-type: deployment
-    description: Best practices for multi-tenant management in IBM Cloud.
-    label: Best practices for multi-tenant management in IBM Cloud.
+    description: Best practices for multitenant management in IBM Cloud.
+    label: Best practices for multitenant management in IBM Cloud.
   entries:
   - navgroup:
       id: overview
@@ -30,11 +30,6 @@ toc:
       - worker-pool-isolation.md
       - namespace-isolation.md
       - application-native-multitenancy.md
-      - topicgroup:
-          label: summary
-          topics:
-          - topic: summary.md
-            navtitle: Summary multi-tenant management in IBM Cloud.
   - navgroup:
       id: reference
       topics:

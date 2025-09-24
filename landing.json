@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "title": "Multi-tenant best practices on IBM Cloud",
+  "title": "Multitenant best practices on IBM Cloud",
   "introduction": "Basic principles to deploy an application to be consumed by multiple customers within the organization.",
   "section_topics": {
     "links": [
