@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-24"
+lastupdated: "2025-09-25"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -16,12 +16,12 @@ keywords:
 Isolating Virtual Private Clouds (VPC) is a multitenant strategy where each tenant operates within its own VPC.
 {: shortdesc}
 
-![VPC-based isolation reference](/images/current-guidance.drawio.svg){: caption="VPC-based isolation" caption-side="bottom"}
+![VPC-based isolation reference](/images/current-guidance.svg){: caption="VPC-based isolation" caption-side="bottom"}
 
 ## Advantages
 {: #advantages}
 
-VPC-based isolation provides the following advantages for your organization: 
+VPC-based isolation provides the following advantages for your organization:
 
 - Full isolation for security and performance.
 - Dedicated resources, tailored configurations, and operational independence (networking and storage).
@@ -37,9 +37,9 @@ VPC-based isolation provides the following advantages for your organization:
 ## Challenges
 {: #challenges}
 
-VPC-based isolation includes the following challenges for your organization: 
+VPC-based isolation includes the following challenges for your organization:
 
-- Higher operational expenses and increased administrative tasks, both of which can be mitigated by using infrastructure-as-code automation. 
+- Higher operational expenses and increased administrative tasks, both of which can be mitigated by using infrastructure-as-code automation.
 - Underutilized resources.
 - IP address planning.
 
