@@ -26,18 +26,17 @@
     {
       "title": "Best practices and requirements for software as a service",
       "description": "These best practices summarize some of the most important technical principles for SaaS providers based on the control requirements and implementation guidance of the IBM Cloud Framework for Financial Services",
-      "href": "/docs/framework-financial-services?topic=framework-financial-services-best-practices",
+      "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-best-practices",
       "type": "article",
       "recommended": true
     },
     {
       "title": "Best practices and requirements for software",
       "description": "These best practices summarize some of the most important technical principles for software providers based on the controls and implementation guidance of the IBM Cloud Framework for Financial Services",
-      "href": "/docs/framework-financial-services?topic=framework-financial-services-best-practices-software",
+      "href": "https://cloud.ibm.com/docs/framework-financial-services?topic=framework-financial-services-best-practices-software",
       "type": "article",
       "recommended": true
     }
-
   ],
   "section_architectures": [
     {
