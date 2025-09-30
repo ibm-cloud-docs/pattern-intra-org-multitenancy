@@ -1,0 +1,36 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs-internal/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-intra-org-multitenancy
+    href: /docs/pattern-intra-org-multitenancy
+    path: pattern-intra-org-multitenancy
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    description: Best practices for multitenant management in IBM Cloud.
+    label: Best practices for multitenant management in IBM Cloud.
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - overview.md
+  - navgroup:
+      id: plan
+      topics:
+      - topic: current_guidance.md
+        navtitle: Guidance for tenants
+      - key_considerations.md
+  - navgroup:
+      id: howto
+      topics:
+      - vpc-isolation.md
+      - worker-pool-isolation.md
+      - namespace-isolation.md
+      - application-native-multitenancy.md
+  - navgroup:
+      id: reference
+      topics:
+      - references.md
