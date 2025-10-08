@@ -62,7 +62,6 @@ As you evaluate worker pool-based isolation, consider the following questions:
 
 Use the following checklist to determine whether your organization is ready to pursue worker pool Red Hat OpenShift multitenancy. 
 
-# ✅ Worker Pool-Based Red Hat OpenShift Multitenancy Readiness Checklist – IBM Cloud
 
 ## 1. Strategic Alignment
 - [ ] Clear business case for worker pool-based multitenancy (e.g., performance isolation, compliance, workload segregation).
