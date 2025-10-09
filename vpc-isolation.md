@@ -66,7 +66,6 @@ Use the following checklist to determine whether your organization is ready to p
 | Task | Description |
 |---|-------------|
 | - [ ] **Strategic Alignment** | * Clear business case for multitenancy (e.g., cost optimization, scalability, tenant isolation). \n * Stakeholder buy-in across architecture, security, operations, and compliance teams. \n * Defined tenant models (e.g., per customer, per business unit, per environment). |
-
 | - [ ] **Architecture & Design** | * Familiarity with IBM Cloud VPC architecture and components (subnets, routing tables, security groups, etc.). \n * Decision on tenancy model: **shared VPC** vs. **dedicated VPC per tenant**. \n * Blueprint for tenant isolation (network segmentation, IAM policies, resource tagging). \n * Plan for scalability and automation (e.g., Terraform, Schematics, IBM Cloud CLI). |
 | - [ ] **Security & Compliance** | * Defined security boundaries between tenants (e.g., security groups, ACLs). \n * IAM roles and policies scoped per tenant. \n * Encryption strategy for data at rest and in transit. \n * Compliance requirements mapped to VPC capabilities (e.g., HIPAA, GDPR, SOC2). |
 | - [ ] **Networking** | * IP address management strategy across tenants. \n * DNS and routing configuration per tenant. \n * VPN or Direct Link setup for hybrid connectivity if needed. \n * Firewall and traffic inspection policies. |
