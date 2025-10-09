@@ -90,23 +90,13 @@ Use the following checklist to determine whether your organization is ready to p
 | Task | Description |
 |---|-------------|
 | - [ ] **Strategic Alignment** | * Clear business justification for namespace-based multitenancy (e.g., cost efficiency, faster onboarding, simplified operations). \n* Agreement on tenant definition (e.g., per team, per application, per customer). \n * Stakeholder alignment across architecture, DevOps, security, and compliance teams. |
-
 | - [ ] **Cluster Architecture & Design** | * Understanding of OpenShift cluster architecture on IBM Cloud. \n* Decision on single vs. multiple cluster strategy. \n * Namespace isolation strategy (e.g., RBAC, NetworkPolicies). \n * Resource quotas and limit ranges defined per namespace. |
-
 | - [ ] **Identity & Access Management**  | * Role-Based Access Control (RBAC) configured per tenant namespace. \n * Integration with enterprise identity providers (e.g., LDAP, OIDC). \n * Tenant-specific service accounts and secrets management. |
-
 | - [ ] **Security & Compliance**  | * NetworkPolicies implemented to isolate tenant traffic. \n * Pod Security Admission (PSA) policies enforced per namespace. \n * Data encryption in transit and at rest. \n * Compliance mapping (e.g., PCI, HIPAA, GDPR) to OpenShift features. |
-
 | - [ ] **Resource Management**  | * Resource quotas and limits applied to control tenant usage. \n * Namespace-level monitoring and logging (e.g., Prometheus, Loki, OpenShift Logging). \n * Backup and disaster recovery strategy per namespace. |
-
 | - [ ] **DevOps & Automation**  | * CI/CD pipelines scoped per tenant namespace. \n * GitOps strategy (e.g., ArgoCD or Tekton) for tenant deployments. \n * Namespace provisioning automated via templates or operators. |
-
 | - [ ] **Observability & Operations**  | * Centralized monitoring with tenant-level granularity. \n *  Logging and audit trails per namespace. \n *  Alerts and dashboards scoped to tenant workloads. | 
-
 | - [ ] **Cost & Chargeback**  | * Cost tracking per namespace using labels or annotations. \n * Integration with IBM Cloud billing and metering tools. \n * Chargeback or showback models defined for internal or external tenants. |
-
 | - [ ] **Support & Lifecycle Management**  | * Tenant onboarding/offboarding workflows. \n * Namespace lifecycle policies (e.g., expiration, archival). \n * Defined SLAs and support tiers per tenant. |
-
 | - [ ] **Governance & Policy**  | * Policy enforcement using OpenShift Gatekeeper or Kyverno. \n * Namespace naming conventions and tagging standards. \n * Regular audits and compliance checks. |
-
 {: caption="Readiness checklist for Namespace-Based Red Hat OpenShift Multitenancy" caption-side="top"}
