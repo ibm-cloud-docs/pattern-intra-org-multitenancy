@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-08"
+lastupdated: "2025-10-09"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -62,55 +62,16 @@ As you evaluate worker pool-based isolation, consider the following questions:
 
 Use the following checklist to determine whether your organization is ready to pursue worker pool Red Hat OpenShift multitenancy. 
 
-
-## 1. Strategic Alignment
-- [ ] Clear business case for worker pool-based multitenancy (e.g., performance isolation, compliance, workload segregation).
-- [ ] Defined tenant segmentation strategy (e.g., per customer, per team, per environment).
-- [ ] Stakeholder alignment across architecture, DevOps, security, and finance teams.
-
-## 2. Cluster Architecture & Design
-- [ ] Understanding of OpenShift on IBM Cloud cluster and worker pool architecture.
-- [ ] Decision on single vs. multiple cluster strategy.
-- [ ] Worker pool isolation strategy (e.g., node selectors, taints and tolerations).
-- [ ] Resource allocation planning per worker pool.
-
-## 3. Identity & Access Management
-- [ ] Role-Based Access Control (RBAC) configured per tenant.
-- [ ] Integration with enterprise identity providers (e.g., LDAP, OIDC).
-- [ ] Secure service account and secret management per tenant.
-
-## 4. Security & Compliance
-- [ ] Workload isolation using dedicated worker pools.
-- [ ] Pod Security Admission (PSA) policies enforced per tenant.
-- [ ] NetworkPolicies applied to restrict inter-tenant communication.
-- [ ] Compliance mapping (e.g., PCI, HIPAA, GDPR) to OpenShift features.
-
-## 5. Resource Management
-- [ ] Resource quotas and limits defined per tenant.
-- [ ] Monitoring and logging scoped to worker pools (e.g., Prometheus, Loki, OpenShift Logging).
-- [ ] Backup and disaster recovery strategy per tenant.
-
-## 6. DevOps & Automation
-- [ ] CI/CD pipelines adapted for tenant-specific worker pools.
-- [ ] GitOps strategy for tenant deployments.
-- [ ] Automated provisioning of worker pools and associated resources.
-
-## 7. Observability & Operations
-- [ ] Centralized monitoring with tenant-level granularity.
-- [ ] Logging and audit trails scoped to worker pools.
-- [ ] Alerts and dashboards tailored to tenant workloads.
-
-## 8. Cost & Chargeback
-- [ ] Cost tracking per worker pool using labels or annotations.
-- [ ] Integration with IBM Cloud billing and metering tools.
-- [ ] Chargeback or showback models defined for internal or external tenants.
-
-## 9. Support & Lifecycle Management
-- [ ] Tenant onboarding/offboarding workflows.
-- [ ] Worker pool lifecycle policies (e.g., scaling, retirement).
-- [ ] Defined SLAs and support tiers per tenant.
-
-## 10. Governance & Policy
-- [ ] Policy enforcement using OpenShift.
-- [ ] Naming conventions and tagging standards for worker pools.
-- [ ] Regular audits and compliance checks.
+| Task | Description |
+|---|-------------|
+| - [ ] **Strategic Alignment** | * Clear business case for worker pool-based multitenancy (e.g., performance isolation, compliance, workload segregation). \n * Defined tenant segmentation strategy (e.g., per customer, per team, per environment). \n * Stakeholder alignment across architecture, DevOps, security, and finance teams. |
+| - [ ] **Cluster Architecture & Design** | * Understanding of OpenShift on IBM Cloud cluster and worker pool architecture. \n * Decision on single vs. multiple cluster strategy. \n * Worker pool isolation strategy (e.g., node selectors, taints and tolerations). \n * Resource allocation planning per worker pool. |
+| - [ ] **Identity & Access Management** | * Role-Based Access Control (RBAC) configured per tenant. \n * Integration with enterprise identity providers (e.g., LDAP, OIDC). \n * Secure service account and secret management per tenant. |
+| - [ ] **Security & Compliance** | * Workload isolation using dedicated worker pools. \n * Pod Security Admission (PSA) policies enforced per tenant. \n * NetworkPolicies applied to restrict inter-tenant communication. \n * Compliance mapping (e.g., PCI, HIPAA, GDPR) to OpenShift features. |
+| - [ ] **Resource Management** | * Resource quotas and limits defined per tenant. \n * Monitoring and logging scoped to worker pools (e.g., Prometheus, Loki, OpenShift Logging). \n * Backup and disaster recovery strategy per tenant. |
+| - [ ] **DevOps & Automation** | * CI/CD pipelines adapted for tenant-specific worker pools. \n * GitOps strategy for tenant deployments. \n * Automated provisioning of worker pools and associated resources. |
+| - [ ] **Observability & Operations** | * Centralized monitoring with tenant-level granularity. \n * Logging and audit trails scoped to worker pools. \n * Alerts and dashboards tailored to tenant workloads. |
+| - [ ] **Cost & Chargeback** | * Cost tracking per worker pool using labels or annotations. \n * Integration with IBM Cloud billing and metering tools. \n * Chargeback or showback models defined for internal or external tenants. |
+| - [ ] **Support & Lifecycle Management** | * Tenant onboarding/offboarding workflows. \n * Worker pool lifecycle policies (e.g., scaling, retirement). \n * Defined SLAs and support tiers per tenant. |
+| - [ ] **Governance & Policy** | * Policy enforcement using OpenShift. \n * Naming conventions and tagging standards for worker pools. \n * Regular audits and compliance checks. |
+{: caption="Readiness checklist for worker pool Red Hat OpenShift multitenancy" caption-side="top"}
