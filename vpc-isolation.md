@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-08"
+lastupdated: "2025-10-09"
 
 subcollection: pattern-intra-org-multitenancy
 keywords:
@@ -63,46 +63,15 @@ As you evaluate VPC-based isolation, consider the following questions:
 
 Use the following checklist to determine whether your organization is ready to pursue Virtual Private Cloud (VPC) multitenancy. 
 
-## 1. Strategic Alignment
-- [ ] Clear business case for multitenancy (e.g., cost optimization, scalability, tenant isolation).
-- [ ] Stakeholder buy-in across architecture, security, operations, and compliance teams.
-- [ ] Defined tenant models (e.g., per customer, per business unit, per environment).
+| Task | Description |
+|---|-------------|
+| - [ ] **Strategic Alignment** | * Clear business case for multitenancy (e.g., cost optimization, scalability, tenant isolation). \n * Stakeholder buy-in across architecture, security, operations, and compliance teams. \n * Defined tenant models (e.g., per customer, per business unit, per environment). |
 
-## 2. Architecture & Design
-- [ ] Familiarity with IBM Cloud VPC architecture and components (subnets, routing tables, security groups, etc.).
-- [ ] Decision on tenancy model: **shared VPC** vs. **dedicated VPC per tenant**.
-- [ ] Blueprint for tenant isolation (network segmentation, IAM policies, resource tagging).
-- [ ] Plan for scalability and automation (e.g., Terraform, Schematics, IBM Cloud CLI).
-
-## 3. Security & Compliance
-- [ ] Defined security boundaries between tenants (e.g., security groups, ACLs).
-- [ ] IAM roles and policies scoped per tenant.
-- [ ] Encryption strategy for data at rest and in transit.
-- [ ] Compliance requirements mapped to VPC capabilities (e.g., HIPAA, GDPR, SOC2).
-
-## 4. Networking
-- [ ] IP address management strategy across tenants.
-- [ ] DNS and routing configuration per tenant.
-- [ ] VPN or Direct Link setup for hybrid connectivity if needed.
-- [ ] Firewall and traffic inspection policies.
-
-## 5. Resource Management
-- [ ] Resource tagging and naming conventions for tenant identification.
-- [ ] Quota and billing management per tenant.
-- [ ] Monitoring and logging strategy (e.g., LogDNA, Sysdig, Activity Tracker).
-- [ ] Backup and disaster recovery plans per tenant.
-
-## 6. Automation & DevOps
-- [ ] Infrastructure as Code (IaC) templates for tenant provisioning.
-- [ ] CI/CD pipelines adapted for multitenant deployments.
-- [ ] Tenant onboarding/offboarding workflows.
-
-## 7. Operations & Support
-- [ ] Defined SLAs and support models per tenant.
-- [ ] Incident response and escalation procedures.
-- [ ] Tenant usage reporting and analytics.
-
-## 8. Cost & Billing
-- [ ] Cost allocation strategy (e.g., resource tags, IBM Cloud billing reports).
-- [ ] Budgeting and forecasting tools in place.
-- [ ] Chargeback or showback models for internal or external tenants.
+| - [ ] **Architecture & Design** | * Familiarity with IBM Cloud VPC architecture and components (subnets, routing tables, security groups, etc.). \n * Decision on tenancy model: **shared VPC** vs. **dedicated VPC per tenant**. \n * Blueprint for tenant isolation (network segmentation, IAM policies, resource tagging). \n * Plan for scalability and automation (e.g., Terraform, Schematics, IBM Cloud CLI). |
+| - [ ] **Security & Compliance** | * Defined security boundaries between tenants (e.g., security groups, ACLs). \n * IAM roles and policies scoped per tenant. \n * Encryption strategy for data at rest and in transit. \n * Compliance requirements mapped to VPC capabilities (e.g., HIPAA, GDPR, SOC2). |
+| - [ ] **Networking** | * IP address management strategy across tenants. \n * DNS and routing configuration per tenant. \n * VPN or Direct Link setup for hybrid connectivity if needed. \n * Firewall and traffic inspection policies. |
+| - [ ] **Resource Management** | *  Resource tagging and naming conventions for tenant identification. \n * Quota and billing management per tenant. \n * Monitoring and logging strategy (e.g., LogDNA, Sysdig, Activity Tracker). \n * Backup and disaster recovery plans per tenant. |
+| - [ ] **Automation & DevOps** | * Infrastructure as Code (IaC) templates for tenant provisioning. \n *  CI/CD pipelines adapted for multitenant deployments. \n * Tenant onboarding/offboarding workflows. |
+| - [ ] **Operations & Support** | * Defined SLAs and support models per tenant. \n * Incident response and escalation procedures. \n * Tenant usage reporting and analytics. |
+| - [ ] **Cost & Billing** | * Cost allocation strategy (e.g., resource tags, IBM Cloud billing reports). \n * Budgeting and forecasting tools in place. \n * Chargeback or showback models for internal or external tenants. |
+{: caption="Readiness checklist for Virtual Private Cloud (VPC) multitenancy" caption-side="top"}
