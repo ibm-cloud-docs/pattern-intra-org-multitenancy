@@ -32,7 +32,7 @@ IBM Cloud services that handle nontenant data such as security information and e
 ## Encrypting keys
 {: #kms}
 
-Encryption services like {{site.data.keyword.hscrypto_full_notm}} (HPCS) can be shared by using key rings, which allows secure key management across business units. Each VPC should maintain its own set of Virtual Private Endpoints (VPEs) to control access and traffic flow. DNS services can be shared between VPCs to simplify name resolution, but care must be taken to prevent unintended exposure. Noncritical environments like QA or UAT should be treated as separate business units to maintain consistency in governance and isolation.
+Encryption services like Key Protect can be shared by using key rings, which allows secure key management across business units. Each VPC should maintain its own set of Virtual Private Endpoints (VPEs) to control access and traffic flow. DNS services can be shared between VPCs to simplify name resolution, but care must be taken to prevent unintended exposure. Noncritical environments like QA or UAT should be treated as separate business units to maintain consistency in governance and isolation.
 
 ## Connecting securely
 {: #connect-secure}
