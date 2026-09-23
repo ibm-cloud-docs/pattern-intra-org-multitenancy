@@ -1,23 +1,24 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2025-10-09"
+  years: 2026
+lastupdated: "2026-09-23"
 
 subcollection: pattern-intra-org-multitenancy
-keywords:
+keywords: namespace isolation, multitenancy, Red Hat OpenShift, Kubernetes, tenant isolation, RBAC, IBM Cloud
+
+content-type: howto
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Isolating namespaces 
+# Isolating namespaces
 {: #namespace}
 
-With namespace-based isolation, tenants share a cluster. Within that cluster, namespaces are used to logically separate each tenant's resources. 
+With namespace-based isolation, tenants share a cluster. Within that cluster, namespaces are used to logically separate each tenant's resources.
 {: shortdesc}
 
-
-![Namespace based isolation reference](/images/namespace-isolation.svg){: caption="Namespace based isolation" caption-side="bottom"}
+![Architecture diagram showing namespace-based isolation where tenants share a cluster with logical separation through Kubernetes namespaces](images/namespace-isolation.svg){: caption="Namespace based isolation" caption-side="bottom"}
 
 ## Advantages
 {: #advantages}
@@ -63,11 +64,11 @@ Fair sharing
 Isolation
 :   Isolation is critical to prevent tenants from accessing each other's workloads and secrets. Assign different storage classes to each tenant, ideally linked to their own encryption keys.
 
-Admission controller 
-:   Use an admission controller to enforce which storage classes are allowed within specific namespaces. [Learn more about Kubernetes admission controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/). And, use a separate COS/ICD instance for each tenant.
+Admission controller
+:   Use an admission controller to enforce which storage classes are allowed within specific namespaces. For more information, see [Kubernetes admission controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/){: external}. And, use a separate Cloud Object Storage or {{site.data.keyword.cloud_notm}} Databases instance for each tenant.
 
 Internal image registry
-:   Disable the internal image registry if Object Storage is not encrypted. For more information, go to [IBM Cloud Registry Guidance](https://cloud.ibm.com/docs/openshift?)
+:   Disable the internal image registry if Object Storage is not encrypted. For more information, see [{{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started).
 
 
 
@@ -85,7 +86,7 @@ As you evaluate namespace-based isolation, consider the following questions:
 ### Readiness checklist
 {: #checklist}
 
-Use the following checklist to determine whether your organization is ready to pursue Namespace-Based Red Hat OpenShift Multitenancy. 
+Use the following checklist to determine whether your organization is ready to pursue namespace-based Red Hat OpenShift multitenancy.
 
 | Task | Description |
 |---|-------------|
@@ -93,10 +94,10 @@ Use the following checklist to determine whether your organization is ready to p
 | - [ ] **Cluster Architecture & Design** | * Understanding of OpenShift cluster architecture on IBM Cloud. \n* Decision on single vs. multiple cluster strategy. \n * Namespace isolation strategy (e.g., RBAC, NetworkPolicies). \n * Resource quotas and limit ranges defined per namespace. |
 | - [ ] **Identity & Access Management**  | * Role-Based Access Control (RBAC) configured per tenant namespace. \n * Integration with enterprise identity providers (e.g., LDAP, OIDC). \n * Tenant-specific service accounts and secrets management. |
 | - [ ] **Security & Compliance**  | * NetworkPolicies implemented to isolate tenant traffic. \n * Pod Security Admission (PSA) policies enforced per namespace. \n * Data encryption in transit and at rest. \n * Compliance mapping (e.g., PCI, HIPAA, GDPR) to OpenShift features. |
-| - [ ] **Resource Management**  | * Resource quotas and limits applied to control tenant usage. \n * Namespace-level monitoring and logging (e.g., Prometheus, Loki, OpenShift Logging). \n * Backup and disaster recovery strategy per namespace. |
-| - [ ] **DevOps & Automation**  | * CI/CD pipelines scoped per tenant namespace. \n * GitOps strategy (e.g., ArgoCD or Tekton) for tenant deployments. \n * Namespace provisioning automated via templates or operators. |
-| - [ ] **Observability & Operations**  | * Centralized monitoring with tenant-level granularity. \n *  Logging and audit trails per namespace. \n *  Alerts and dashboards scoped to tenant workloads. | 
+| - [ ] **Resource Management**  | * Resource quotas and limits applied to control tenant usage. \n * Namespace-level monitoring and logging (e.g., {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.logs_full_notm}}, or on-cluster Prometheus and Loki). \n * Backup and disaster recovery strategy per namespace. |
+| - [ ] **DevOps & Automation**  | * CI/CD pipelines scoped per tenant namespace. \n * GitOps strategy (e.g., Argo CD or Tekton) for tenant deployments. \n * Namespace provisioning automated via templates or operators. |
+| - [ ] **Observability & Operations**  | * Centralized monitoring with tenant-level granularity. \n *  Logging and audit trails per namespace. \n *  Alerts and dashboards scoped to tenant workloads. \n * Integration with {{site.data.keyword.at_full_notm}} for audit event capture. |
 | - [ ] **Cost & Chargeback**  | * Cost tracking per namespace using labels or annotations. \n * Integration with IBM Cloud billing and metering tools. \n * Chargeback or showback models defined for internal or external tenants. |
 | - [ ] **Support & Lifecycle Management**  | * Tenant onboarding/offboarding workflows. \n * Namespace lifecycle policies (e.g., expiration, archival). \n * Defined SLAs and support tiers per tenant. |
 | - [ ] **Governance & Policy**  | * Policy enforcement using OpenShift Gatekeeper or Kyverno. \n * Namespace naming conventions and tagging standards. \n * Regular audits and compliance checks. |
-{: caption="Readiness checklist for Namespace-Based Red Hat OpenShift Multitenancy" caption-side="top"}
+{: caption="Readiness checklist for namespace-based Red Hat OpenShift multitenancy" caption-side="bottom"}

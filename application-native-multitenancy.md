@@ -1,10 +1,12 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2025-09-24"
+  years: 2026
+lastupdated: "2026-09-23"
 
 subcollection: pattern-intra-org-multitenancy
-keywords:
+keywords: application native multitenancy, tenant isolation, SaaS, shared infrastructure, IBM Cloud, multitenancy
+
+content-type: howto
 
 ---
 
@@ -13,10 +15,10 @@ keywords:
 # Application native multitenancy
 {: #app-native}
 
-With application native multitenancy, the application itself isolates tenants from one another, for example, by using tenant IDs that control access to data. 
+With application native multitenancy, the application itself isolates tenants from one another, for example, by using tenant IDs that control access to data.
 {: shortdesc}
 
-![Application native multitenancy](/images/application-multitenancy.svg){: caption="Application native multitenancy" caption-side="bottom"}
+![Architecture diagram showing application native multitenancy where the application layer handles tenant isolation using tenant IDs](images/application-multitenancy.svg){: caption="Application native multitenancy" caption-side="bottom"}
 
 ## Advantages
 {: #advantages}
@@ -83,4 +85,4 @@ Use the following checklist to determine whether your organization is ready to p
 | - [ ] **Monitoring and observability** | * Provides tenant-specific monitoring dashboards. \n* Supports multitenant logging and tracing. \n * Detects and alerts on tenant-specific performance issues. |
 | - [ ] **Billing and metering** | Supports tenant-level usage tracking for billing purposes. |
 | - [ ] **Compliance and legal** | * Meets GDPR, CCPA, HIPAA, or other regulatory requirements for multitenant environments. \n* Provides tenant-level compliance reports if required. \n * Requires a sharing agreement from different business units, especially when different types of data classification are required. |
-{: caption="Readiness checklist for application native multitenancy" caption-side="top"}
+{: caption="Readiness checklist for application native multitenancy" caption-side="bottom"}
