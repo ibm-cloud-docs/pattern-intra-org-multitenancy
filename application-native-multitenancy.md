@@ -1,10 +1,12 @@
 ---
 copyright:
-  years: 2025
-lastupdated: "2025-09-24"
+  years: 2026
+lastupdated: "2026-09-23"
 
 subcollection: pattern-intra-org-multitenancy
-keywords:
+keywords: application native multitenancy, tenant isolation, SaaS, shared infrastructure, IBM Cloud, multitenancy
+
+content-type: howto
 
 ---
 
@@ -13,15 +15,15 @@ keywords:
 # Application native multitenancy
 {: #app-native}
 
-With application native multitenancy, the application itself isolates tenants from one another, for example, by using tenant IDs that control access to data. 
+With application native multitenancy, the application itself isolates tenants from one another, for example, by using tenant IDs that control access to data.
 {: shortdesc}
 
-![Application native multitenancy](/images/application-multitenancy.svg){: caption="Application native multitenancy" caption-side="bottom"}
+![Architecture diagram showing application native multitenancy where the application layer handles tenant isolation using tenant IDs](images/application-multitenancy.svg){: caption="Application native multitenancy" caption-side="bottom"}
 
 ## Advantages
 {: #advantages}
 
-Application native multitenancy provides the following advantages for your organization: 
+Application native multitenancy provides the following advantages for your organization:
 
 Instant provisioning and self-service management
 :   Application administrators can instantly provision and manage tenants through a self-service interface, streamlining the onboarding process and reducing operational delays.
@@ -32,7 +34,7 @@ Optimized costs
 Simplified deployments and upgrades
 :   No need to manage separate application instances for each tenant. Using one application instance simplifies deployment processes and makes upgrades more efficient and less error-prone.
 
-Dynamic resource allocation 
+Dynamic resource allocation
 :   Shared resources allow for dynamic allocation based on real-time demand, which helps prevent idle capacity and improves overall resource utilization.
 
 Centralized backup and restore
@@ -42,26 +44,24 @@ Centralized backup and restore
 ## Challenges
 {: #challenges}
 
-Application native multitenancy includes the following challenges for your organization: 
+Application native multitenancy includes the following challenges for your organization:
 
-- A strong audit strategy needs to be in place. 
-
-- Tenant-specific customizations might be limited. 
+- A strong audit strategy needs to be in place.
+- Tenant-specific customizations might be limited.
 - Noisy neighbor issues might impact performance for other tenants.
-- Shared data residency. 
-- Tenants that require different versions than one another. 
-
+- Shared data residency.
+- Tenants that require different versions than one another.
 - Adding a feature for application native multitenancy might be complex and increase time to delivery.
-- Chargebacks are more difficult to calculate than with other approaches. 
+- Chargebacks are more difficult to calculate than with other approaches.
 
 ## Determine suitability
 {: #suitability}
 
 As you evaluate application native multitenancy, consider the following questions:
 
-- How important are costs? 
+- How important are costs?
 - Can your organization tolerate some level of resource sharing between tenants without strict isolation?
-- Can you expect tenants to have similar resource usage patterns to balance workloads effectively? 
+- Can you expect tenants to have similar resource usage patterns to balance workloads effectively?
 - Is the deployment expected to have a high number of small-to-medium tenants?
 - Is logical data isolation at the application and database level acceptable?
 - Is strict physical data separation a critical requirement?
@@ -70,10 +70,10 @@ As you evaluate application native multitenancy, consider the following question
 ### Readiness checklist
 {: #checklist}
 
-Use the following checklist to determine whether your organization is ready to pursue application native multitenancy. 
+Use the following checklist to determine whether your organization is ready to pursue application native multitenancy.
 
 | Task | Description |
-|---|-------------|
+| - | - |
 | - [ ] **Architecture and design**  | * Supports logical separation of tenants (schema-based, table-based, or hybrid). \n* Provides data isolation per tenant (logical or physical). \n * Can scale horizontally to accommodate multiple tenants dynamically. \n * Uses configurable tenant provisioning for onboarding new tenants easily. |
 | - [ ] **Security and access control** | * Supports role-based access control or attribute-based access control per tenant. \n* Provides tenant-specific access logs for tracking compliance. \n * Prevents cross-tenant data leakage through proper security boundaries. |
 | - [ ] **Data management** | * Supports tenant-specific data backup and restore procedures. \n* Allows tenant-level data retention policies. \n * Enables audit logging per tenant for compliance needs. |
@@ -83,4 +83,4 @@ Use the following checklist to determine whether your organization is ready to p
 | - [ ] **Monitoring and observability** | * Provides tenant-specific monitoring dashboards. \n* Supports multitenant logging and tracing. \n * Detects and alerts on tenant-specific performance issues. |
 | - [ ] **Billing and metering** | Supports tenant-level usage tracking for billing purposes. |
 | - [ ] **Compliance and legal** | * Meets GDPR, CCPA, HIPAA, or other regulatory requirements for multitenant environments. \n* Provides tenant-level compliance reports if required. \n * Requires a sharing agreement from different business units, especially when different types of data classification are required. |
-{: caption="Readiness checklist for application native multitenancy" caption-side="top"}
+{: caption="Readiness checklist for application native multitenancy" caption-side="bottom"}
